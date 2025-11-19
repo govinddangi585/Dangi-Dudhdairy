@@ -1,0 +1,432 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#mainBody{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #c9eae4; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.header {
+  width: 100%;
+  height: 8vh;
+  border: solid 2px;
+  background-image: linear-gradient(to right, #e1d986, #cee38e);
+  display: flex;
+  position: fixed;
+}
+
+#Logo {
+  height: 65px;
+  margin-left: 100px;
+  inset-block: 0;
+}
+
+#Logo:hover {
+  transform: scale(1.4);
+  transition: transform 0.7s ease-in-out;
+}
+
+.Address {
+  display: flex;
+}
+
+#Location {
+  height: 70px;
+  margin-left: 200px;
+}
+
+.Address p {
+  margin-left: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.search {
+  display: flex;
+  /* margin-top: 20px; */
+  margin-left: 150px;
+}
+
+#search_icon {
+  height: 40px;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+
+#search_bar {
+  margin-top: 20px;
+  width: 150px;
+  height: 20px;
+}
+
+.Phone {
+  margin-left: 150px;
+  display: flex;
+}
+
+#Contact {
+  margin-top: -12px;
+  margin-left: 15px;
+}
+
+#Name {
+  color: #000;
+  font-size: 18px;
+  margin-top: -15px;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+#Number {
+  font-size: 18px;
+  color: #000;
+  margin-top: -18px;
+  margin-left: -5px;
+  font-weight: bold;
+}
+
+#Phone_logo {
+  margin-top: 20px;
+  height: 32px;
+  width: 32px;
+}
+
+#fakeHeader {
+  width: 100%;
+  height: 8vh;
+}
+
+.Navbar {
+  width: 75vw;
+  height: 8vh;
+  margin-left: 150px;
+  display: block;
+  display: flex;
+  top: 10vh;
+  background-color: rgb(58, 41, 41);
+  border-radius: 15px;
+}
+
+.Navbar a {
+  margin: 30px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.Navbar a:link {
+  color: brown;
+}
+
+.Navbar a:visited {
+  color: rgb(197, 124, 215);
+}
+
+.Navbar a:hover {
+  color: red;
+}
+
+.Navbar a:active {
+  color: green;
+}
+
+/* Page 1 */
+
+#page1 {
+  width: 1521px;
+  height: 110vh;
+  background-image: url(./Image/Buffalo.png);
+  background-size: cover;
+}
+
+.text {
+  margin-left: 380px;
+  margin-top: 100px;
+  color: white;
+}
+
+.text h1 {
+  font-size: 80px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.text pre {
+  margin-left: 45px;
+  font-size: 23px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Page 2 */
+
+#page_2 {
+  background-image: linear-gradient(to top, #ada95b, #587b01bc);
+  width: 1521px;
+}
+
+#Information h1 {
+  color: white;
+  margin-left: 350px;
+  font-weight: bolder;
+  font-size: 4rem;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#Information p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 350px;
+  display: inline;
+  /* margin-bottom: 200px; */
+}
+
+#Information ul {
+  list-style-type: none;
+  margin-left: 400px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#Container {
+  margin-top: 150px;
+  display: flex;
+}
+
+#box1, #box2, #box3 {
+  height: 380px;
+  width: 350px;
+  margin-left: 100px;
+  border: solid white 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#box1:hover, #box2:hover, #box3:hover {
+background-color: #c9eae4;
+  transition-timing-function: ease-in;
+  transition-duration: 0.3s;
+}
+
+#box1:hover img, #box2:hover img, #box3:hover img {
+  transform: scale(1.06);
+  transition-timing-function: ease-in;
+  transition-duration: 0.3s;
+}
+
+#Container h1 {
+  margin-left: 90px;
+  font-weight: bolder;
+}
+
+#Container pre {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Page 3 */
+
+#page3 {
+  width: 1521px;
+  height: 110vh;
+  background-image: linear-gradient(to top, #869296, #ada95b);
+}
+
+#details {
+  margin: 50px;
+  display: inline-flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#text2 h1 {
+  margin-top: 300px;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+#text2 p {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+#image_cow {
+  margin-top: 200px;
+  display: flex;
+}
+
+#cow1 {
+  height: 450px;
+  margin-left: 100px;
+}
+
+/* Page 4 */
+
+#page4 {
+  height: 100vh;
+  width: 1521px;
+  background-image: url(./Image/Milkcan.png);
+  background-size: cover;
+  display: inline-block;
+}
+
+#details1 {
+  margin-left: 150px;
+  margin-top: 200px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#details1 h1 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+#details1 p {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+/* Page 5 */
+
+#page5 {
+  height: 90vh;
+  width: 1521px;
+  background-image: linear-gradient(to top, #969d74e7, #744c02e0);
+  display: inline-block;
+}
+
+#details2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#details2 h1 {
+  margin-left: 550px;
+  margin-top: 100px;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+#details2 p {
+  margin-left: 350px;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+.items, #item1, #item2 {
+  display: flex;
+}
+
+#butter, #milk, #cheese, #creame {
+  margin-top: 100px;
+  margin-left: 120px;
+}
+
+.circle-image {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.circle-image:hover {
+  rotate: 360deg;
+  transition: rotate 0.7s ease-in-out;
+}
+
+.items h1 {
+  font-size: 2.5rem;
+  margin-left: 50px;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+
+.items p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Page 6 */
+
+#page6 {
+  height: 84vh;
+  width: 1521px;
+  background-image: linear-gradient(to top, #ada95b, #969d74e7);
+  display: inline-block;
+}
+#Containt {
+  display: flex;
+}
+
+.contact {
+  margin-top: 100px;
+}
+
+#contact1, #contact2 {
+  margin-left: 100px;
+}
+
+#Email {
+  font-size: large;
+  font-weight: 600;
+}
+
+.social-media {
+  display: flex;
+  margin-top: 50px;
+}
+
+#Social-Links {
+  margin-left: 110px;
+  margin-top: -30px;
+}
+
+#Social-Links h1 {
+  font-size: 2.5rem;
+  margin-top: 100px;
+  font-weight: bolder;
+  margin-bottom: -50px;
+}
+
+.social-media img {
+  width: 35px;
+  height: 35px;
+  margin-left: 5px;
+  transition: transform 0.2s ease;
+}
+
+.social-media h2 {
+  margin-left: 10px;
+}
+
+.social-media img:hover {
+  transform: scale(1.2);
+}
+
+.Page-Links {
+  margin-top: 100px;
+  margin-left: 200px;
+  display: inline-block;
+}
+
+.Page-Links a {
+  text-decoration: none;
+  font-size: larger;
+}
+
+footer {
+  display: flex;
+}
+
+.programmer {
+  margin-left: 68%;
+}

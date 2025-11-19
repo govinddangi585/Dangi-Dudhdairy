@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Track Your Order - Dangi Dudh Dairy</title>
+  <link rel="stylesheet" href="Order.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Track Your Order - Dangi Dudh Dairy</h1>
+
+    <div class="section">
+      <label for="customerName">Enter Customer Name:</label>
+      <input type="text" id="customerName" placeholder="e.g., Govind Dangi" />
+      <button onclick="showOrder()">Show Order</button>
+    </div>
+
+    <div id="orderDetails" style="display: none;">
+      <div class="section">
+        <h2>Customer: <span id="custDisplay"></span></h2>
+        <h3>Fat Content</h3>
+        <p><strong>Morning:</strong> <span id="morningFat"></span>%</p>
+        <p><strong>Evening:</strong> <span id="eveningFat"></span>%</p>
+      </div>
+
+      <div class="section">
+        <h3>Ordered Items</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Quantity</th>
+              <th>Rate (₹)</th>
+              <th>Total (₹)</th>
+            </tr>
+          </thead>
+          <tbody id="orderTableBody"></tbody>
+        </table>
+      </div>
+
+      <div class="section total">
+        <h3>Total Amount</h3>
+        <p><strong>Grand Total:</strong> ₹<span id="grandTotal"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const items = [
+      { name: 'Milk', unit: 'L', minQty: 5, maxQty: 20, rate: 60 },
+      { name: 'Butter', unit: 'Kg', minQty: 1, maxQty: 5, rate: 500 },
+      { name: 'Cream', unit: 'Kg', minQty: 0.5, maxQty: 3, rate: 400 },
+      { name: 'Cheese', unit: 'Kg', minQty: 0.2, maxQty: 2, rate: 450 }
+    ];
+
+    function random(min, max, step = 1) {
+      const factor = 1 / step;
+      const r = Math.floor(Math.random() * ((max - min) * factor + 1)) + min * factor;
+      return r / factor;
+    }
+
+    function showOrder() {
+      const name = document.getElementById("customerName").value.trim();
+      if (name === "") {
+        alert("Please enter the customer name.");
+        return;
+      }
+
+      document.getElementById("custDisplay").textContent = name;
+      document.getElementById("orderDetails").style.display = "block";
+
+      // Randomize fat percentages
+      document.getElementById("morningFat").textContent = random(5.8, 6.5, 0.1).toFixed(1);
+      document.getElementById("eveningFat").textContent = random(6.0, 7.0, 0.1).toFixed(1);
+
+      // Randomize items
+      const tbody = document.getElementById("orderTableBody");
+      tbody.innerHTML = "";
+      let grandTotal = 0;
+
+      items.forEach(item => {
+        const qty = random(item.minQty, item.maxQty, 0.1).toFixed(1);
+        const rate = item.rate;
+        const total = (qty * rate).toFixed(2);
+        grandTotal += parseFloat(total);
+
+        const row = `
+          <tr>
+            <td>${item.name}</td>
+            <td>${qty} ${item.unit}</td>
+            <td>${rate}</td>
+            <td>${total}</td>
+          </tr>
+        `;
+        tbody.innerHTML += row;
+      });
+
+      document.getElementById("grandTotal").textContent = grandTotal.toFixed(2);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,621 @@
+@media screen and (max-width: 750px) {
+  .header {
+    width: 748px;
+    height: 11vh;
+  }
+  #Logo {
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 8px;
+  }
+
+  #Location {
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 12px;
+  }
+
+  .Address p {
+    margin-left: 5px;
+    font-size: 15px;
+    width: 130px;
+  }
+
+  .search {
+    margin-top: 22px;
+    margin-left: 10px;
+  }
+
+  #search_icon {
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 15px;
+  }
+
+  #search_bar {
+    width: 100px;
+  }
+
+  .Phone {
+    margin-top: 18px;
+    margin-left: 15px;
+    display: flex;
+  }
+
+  #Name {
+    font-size: 20px;
+    margin-top: -15px;
+    margin-left: 5px;
+    font-weight: bold;
+  }
+
+  #Number {
+    font-size: 20px;
+  }
+
+  #fakeHeader {
+    width: 748px;
+    height: 11vh;
+  }
+
+  .Navbar {
+    width: 690px;
+    height: 5vh;
+    margin-left: 30px;
+  }
+
+  .Navbar a {
+    margin: 8px;
+    margin-top: 12px;
+    font-size: 1.2rem;
+  }
+
+  #page1 {
+    width: 748px;
+    height: 120vh;
+    background-position: center;
+  }
+
+  .text {
+    margin-left: 40px;
+  }
+
+  .text h1 {
+    font-size: 5rem;
+  }
+
+  .text pre {
+    margin-left: 50px;
+    font-size: 1.7rem;
+  }
+
+  #page_2 {
+    width: 748px;
+  }
+
+  #Information h1 {
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size: 5rem;
+  }
+
+  #Information p {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-left: 50px;
+  }
+
+  #Information ul {
+    font-size: 2.4rem;
+  }
+
+  #Information ul {
+    margin-left: 100px;
+  }
+
+  #box1, #box2, #box3 {
+    height: 420px;
+    width: 370px;
+    margin: 7px;
+  }
+
+  .boxImg {
+    width: 99%;
+    height: 190px;
+  }
+
+  #Container h1 {
+    margin-left: 25px;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+  }
+
+  #page3 {
+    width: 748px;
+    height: 120vh;
+  }
+
+  #details {
+    margin-left: 20px;
+    display: flex;
+  }
+
+  #text2 h1 {
+    margin-top: 100px;
+    font-size: 3rem;
+  }
+
+  #text2 p {
+    font-size: 1.7rem;
+  }
+
+  #image_cow {
+    margin-top: 200px;
+  }
+
+  #cow1 {
+    height: 450px;
+    margin-left: 80px;
+  }
+
+  #page4 {
+    width: 748px;
+    background-position: center;
+  }
+
+  #details1 {
+    margin-left: 50px;
+    margin-top: 200px;
+  }
+
+  #details1 h1 {
+    font-size: 5rem;
+  }
+
+  #details1 p {
+    margin-top: 120px;
+    font-size: 2.1rem;
+  }
+
+  #page5 {
+    height: 225vh;
+    width: 748px;
+  }
+
+  #details2 h1 {
+    margin-left: 50px;
+    font-size: 5.5rem;
+  }
+
+  #details2 p {
+    margin-left: 80px;
+    font-size: 3rem;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #butter, #cheese {
+    margin-top: 80px;
+    margin-left: 30px;
+  }
+
+  #milk, #creame {
+    margin-top: 80px;
+    margin-left: 100px;
+  }
+
+  .circle-image {
+    width: 16rem;
+  }
+
+  .items h1 {
+    font-size: 5rem;
+    margin-left: 30px;
+  }
+
+  .items p {
+    font-size: 1.8rem;
+    margin-left: 35px;
+    margin-top: -20px;
+  }
+
+  #page6 {
+    height: 106vh;
+    width: 748px;
+  }
+
+  .contact {
+    margin-top: 100px;
+  }
+
+  #contact1 {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+
+  #Name1 {
+    font-size: 2rem;
+  }
+
+  #Number1 {
+    font-size: 2rem;
+  }
+
+  #Email {
+    font-size: 1.8rem;
+  }
+
+  #contact2 {
+    margin-left: 10px;
+    font-size: 1.5rem;
+  }
+
+  .social-media {
+    font-size: 2.2rem;
+    margin-left: -100px;
+  }
+
+  .Page-Links {
+    margin-top: 40px;
+    margin-left: -300px;
+    font-size: 1.8rem;
+  }
+
+  .Page-Links a {
+    text-decoration: none;
+    font-size: larger;
+  }
+
+  .rights {
+    font-size: 1.5rem;
+  }
+
+  .programmer {
+    font-size: 1.5rem;
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .header {
+    width: 520px;
+    height: 7vh;
+  }
+  #Logo {
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 7px;
+  }
+
+  #Location {
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .Address p {
+    margin-left: 2px;
+    font-size: 10px;
+  }
+
+  .search {
+    margin-top: -10px;
+    margin-left: 2px;
+  }
+
+  #search_icon {
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 18px;
+  }
+
+  #search_bar {
+    width: 50px;
+  }
+
+  .Phone {
+    margin-top: -5px;
+    margin-left: 5px;
+    display: flex;
+  }
+
+  #Phone_logo {
+    width: 25px;
+    height: 25px;
+  }
+
+  #Name {
+    font-size: 14px;
+    margin-top: -15px;
+    margin-left: 0px;
+    font-weight: bold;
+  }
+
+  #Number {
+    font-size: 14px;
+  }
+
+  #fakeHeader {
+    width: 520px;
+    height: 7vh;
+  }
+
+  .Navbar {
+    width: 118vw;
+    height: 4vh;
+    margin-left: 12px;
+  }
+
+  .Navbar a {
+    margin: 8px;
+    margin-top: 12px;
+    font-size: 13.5px;
+  }
+
+  #page1 {
+    width: 520px;
+    height: auto;
+    background-position: center;
+  }
+
+  .text {
+    margin-left: 10px;
+    margin-top: 100px;
+  }
+
+  .text h1 {
+    font-size: 3.3rem;
+  }
+
+  .text pre {
+    margin-left: 30px;
+    font-size: 1.5rem;
+  }
+
+  #page_2 { 
+    width: 520px;
+    height: auto;
+  }
+
+  #Information h1 {
+    margin-top: 150px;
+    margin-left: 35px;
+    font-size: 3rem;
+  }
+
+  #Information p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-left: 40px;
+  }
+
+  #Information ul {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-left: 80px;
+  }
+
+  #box1 {
+    height: 360px;
+    width: 140px;
+    margin-left: 10px;
+  }
+  #box2 {
+    height: 360px;
+    width: 140px;
+    margin-left: 10px;
+  }
+  #box3 {
+    height: 360px;
+    width: 140px;
+    margin-left: 10px;
+  }
+
+  .boxImg {
+    width: 99%;
+    height: 130px;
+  }
+
+  #Container h1 {
+    margin-top: 0px;
+    margin-left: 8px;
+  }
+
+  pre {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+  }
+
+  #Container pre {
+    margin-top: -15px;
+    font-size: 1rem;
+  }
+
+  #page3 {
+    width: 520px;
+    height: auto;
+  }
+
+  #details {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #text2 {
+    width: 500px;
+  }
+
+  #text2 h1 {
+    margin-top: 100px;
+    font-size: 2.5rem;
+  }
+
+  #text2 p {
+    font-size: 1.6rem;
+  }
+
+  #image_cow {
+    margin-top: 100px;
+  }
+
+  #page4 {
+    width: 520px;
+    height: auto;
+    background-position: center;
+  }
+
+  #details1 {
+    margin-left: 30px;
+    margin-top: 200px;
+  }
+
+  #details1 h1 {
+    font-size: 5.5rem;
+  }
+
+  #page5 {
+    width: 520px;
+    height: auto;
+  }
+
+  #details2 h1 {
+    margin-top: 300px;
+    margin-left: 30px;
+    font-size: 6rem;
+  }
+
+  #details2 p {
+    margin-left: 50px;
+    font-size: 2.5rem;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #butter {
+    margin-top: 200px;
+    margin-left: 30px;
+  }
+
+  #milk {
+    margin-top: 200px;
+    margin-left: 50px;
+  }
+
+  #cheese {
+    margin-top: 60px;
+    margin-left: 30px;
+  }
+
+  #creame {
+    margin-top: 60px;
+    margin-left: 50px;
+  }
+
+  .circle-image {
+    width: 12rem;
+  }
+
+  .items h1 {
+    font-size: 3rem;
+    margin-left: 23px;
+  }
+
+  .items p {
+    font-size: 1.6rem;
+    margin-left: 28px;
+    margin-top: -20px;
+  }
+
+  #page6 {
+    width: 520px;
+    height: auto;
+  }
+
+  .contact {
+    margin-top: 100px;
+  }
+
+  #contact1 {
+    margin-left: 15px;
+    font-size: 1.3rem;
+  }
+
+  #Name1 {
+    font-size: 1.7rem;
+  }
+
+  #Number1 {
+    font-size: 1.5rem;
+  }
+
+  #Email {
+    font-size: 1.5rem;
+  }
+
+  #contact1 p {
+    width: 80vw;
+    font-size: 1rem;
+  }
+
+  #contact2 {
+    margin-left: 20px;
+    font-size: 1.2rem;
+  }
+
+  #contact2 p {
+    margin-top: -15px;
+    font-size: 1.1rem;
+  }
+
+  #Social-Links h1 {
+    margin-left: -90px;
+  }
+
+  .social-media {
+    margin-left: -80px;
+    font-size: 1.2rem;
+  }
+
+  .Page-Links {
+    margin-top: 85px;
+    margin-left: -100px;
+    font-size: 1.2rem;
+  }
+
+  .rights {
+    font-size: 0.8rem;
+    margin-left: 10px;
+  }
+
+  .programmer {
+    font-size: 0.8rem;
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+
+  .Navbar {
+    width: 488px;
+    height: 35px;
+  }
+
+  .Navbar a {
+    font-size: 11px;
+  }
+
+  #page1, #page_2, #page3, #page4, #page5, #page6{
+    width: 535px;
+  }
+}
+

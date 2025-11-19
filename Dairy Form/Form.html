@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dangi Dudh Dairy Registration</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+
+<body>
+    <center>
+        <h1>Registration Form for " Dangi Dudh Dairy.."</h1><br>
+    </center>
+<hr>
+    <div id="formContainer">
+
+        <div>
+            <form id="dairyForm">
+                <label>FirstName : </label>
+                <input type="text" placeholder="Enter Your First Name" name="fname" required>
+
+                <label>LastName : </label>
+                <input type="text" placeholder="Enter Your Last Name" name="lname" required>
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter Your Email" required>
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter Your Password" name="Password" required>
+
+                <label>Date of Joining :</label>
+                <input type="date" name="doj" value="">
+
+                <label>Type of Animal:</label>
+                <input type="radio" name="animal" id="Buffalo" value="Buffalo">
+                <label for="Buffalo">Buffalo</label>
+                <input type="radio" name="animal" id="Cow" value="Cow">
+                <label for="Cow">Cow</label>
+
+                <label>Time to fetch milk:</label>
+                <input type="checkbox" id="morning" name="time" value="Morning">
+                <label for="morning">Morning</label>
+                <input type="checkbox" id="evening" name="time" value="Evening">
+                <label for="evening">Evening</label>
+                <br>
+                <hr>
+
+                <center>
+                    <input type="submit" value="submit" name="submit">
+                    <input type="reset" value="reset" name="reset">
+                </center>
+            </form>
+        </div>
+    </div>
+
+    <!-- Overlay message -->
+    <div class="overlay" id="successOverlay">
+        You are successfully registered.<br>Thank you for choosing <strong>"Dangi Dudh Dairy"</strong>!
+    </div>
+
+    <script>
+        const form = document.getElementById("dairyForm");
+        const formContainer = document.getElementById("formContainer");
+        const overlay = document.getElementById("successOverlay");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // prevent page reload
+            formContainer.classList.add("blur"); // blur the form
+            overlay.style.display = "flex"; // show success message
+        });
+    </script>
+
+</body>
+
+</html>
